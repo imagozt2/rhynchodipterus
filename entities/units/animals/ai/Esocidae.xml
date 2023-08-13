@@ -1,0 +1,21 @@
+<BFTypedBinder binderType="Esocidae" abstract="true">
+	<types>
+		<entity>
+			<actor>
+				<animal>
+					<Actinopterygii>
+						<Salmoniformes />
+							<Esocidae />
+						<Salmoniformes />
+					</Actinopterygii>
+				</animal>
+			</actor>
+		</entity>
+	</types>
+	<instance>
+		<BFGEntity />
+	</instance>
+	<shared>
+		<ZTEntityCrater crateType="AnimalCrate_mm" crateParticleDef="EmoteReleaseToWild_mm" />
+	</shared>
+</BFTypedBinder>

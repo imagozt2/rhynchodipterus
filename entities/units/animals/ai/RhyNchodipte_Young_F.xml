@@ -1,0 +1,63 @@
+<BFTypedBinder binderType="RhyNchodipte_Young_F">
+
+   <types>
+
+      <entity>
+
+         <actor>
+
+            <animal>
+
+               <Actinopterygii>
+
+                  <Salmoniformes>
+
+                     <Esocidae>
+
+                        <RhyNchodipte>
+
+                           <RhyNchodipte_Young>
+
+                              <RhyNchodipte_Young_F/>
+
+                           </RhyNchodipte_Young>
+
+                        </RhyNchodipte>
+
+                     </Esocidae>
+
+                  </Salmoniformes>
+
+               </Actinopterygii>
+
+            </animal>
+
+         </actor>
+
+      </entity>
+
+   </types>
+
+   <instance>
+
+      <BFGEntity/>
+
+   </instance>
+
+   <shared>
+
+      <UIToggleButton template="adopt">
+
+         <on>
+
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="RhyNchodipte_Young_F"/>
+
+         </on>
+
+      </UIToggleButton>
+
+      <BFAIEntityDataShared b_Male="0"/>
+
+   </shared>
+
+</BFTypedBinder>

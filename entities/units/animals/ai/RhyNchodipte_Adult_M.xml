@@ -1,0 +1,115 @@
+<BFTypedBinder binderType="RhyNchodipte_Adult_M">
+
+   <types>
+
+      <entity>
+
+         <actor>
+
+            <animal>
+
+               <Actinopterygii>
+
+                  <Salmoniformes>
+
+                     <Esocidae>
+
+                        <RhyNchodipte>
+
+                           <RhyNchodipte_Adult>
+
+                              <RhyNchodipte_Adult_M/>
+
+                           </RhyNchodipte_Adult>
+
+                        </RhyNchodipte>
+
+                     </Esocidae>
+
+                  </Salmoniformes>
+
+               </Actinopterygii>
+
+            </animal>
+
+         </actor>
+
+      </entity>
+
+   </types>
+
+   <instance>
+
+      <BFGEntity/>
+
+   </instance>
+
+   <shared>
+
+      <UIToggleButton template="adopt">
+
+         <on>
+
+            <event msg="ZT_SETPLACEMENTOBJECT" data="BFString" string="RhyNchodipte_Adult_M"/>
+
+         </on>
+
+      </UIToggleButton>
+
+      <BFAIEntityDataShared b_Male="1" f_adoptCount="rand(1,1)"/>
+
+   </shared>
+
+   <binder>
+
+      <BFNamedBinder binderName="mainObj">
+
+         <instance>
+
+            <BFPhysObj>
+
+               <BFActorComponent actorfile="entities/units/animals/RhyNchodipte/RhyNchodipte_Adult_F.bfm" scale="0.8"/>
+
+            </BFPhysObj>
+
+         </instance>
+
+      </BFNamedBinder>
+
+	<BFNamedBinder binderName="texController" required="1">
+
+		<instance>
+
+			<BFAITextureController currState="well" defaultState="well">
+
+				<attribList>
+
+					<health />
+
+					<hygiene />
+
+				</attribList>
+
+				<stateList>
+
+					<well>
+
+						<textureData>
+
+							<mainObj material="RhyNchodipte_Adult_F" image="entities\units\animals\RhyNchodipte\RhyNchodipte_Adult_F.dds" />
+
+						</textureData>
+
+					</well>
+
+				</stateList>
+
+			</BFAITextureController>
+
+		</instance>
+
+	</BFNamedBinder>
+
+   </binder>
+
+</BFTypedBinder>
